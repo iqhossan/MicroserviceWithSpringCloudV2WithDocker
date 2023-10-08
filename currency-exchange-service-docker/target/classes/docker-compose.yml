@@ -1,0 +1,11 @@
+version: "3"
+services:
+  currency-exchange-service:
+    image: currency-exchange-service:latest
+    container_name: currency-exchange-service
+    ports:
+      - "8000:8000"
+    networks:
+      - currency-network
+networks:
+  currency-network:
